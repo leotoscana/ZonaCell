@@ -9,4 +9,17 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Nombre">Nombre Completo:</string>
+    <string name="Telefono">Teléfono:</string>
+    <string name="Email">Email:</string>
+    <string name="Descripcion">Descripción Contacto:</string>
+    <string name="Boton">Siguiente</string>
+    <string name="Confirmar">Confirmar Datos</string>
+    <string name="Fecha">Fecha Nacimiento:</string>
+    <string name="Editar">Editar Datos</string>
+    <string name="pnombre">Nombre</string>
+    <string name="ptelefono">Teléfono</string>
+    <string name="pemail">Email</string>
+    <string name="pdescripcion">Descripción</string>
+    <string name="pfecha">Fecha</string>
 </resources>

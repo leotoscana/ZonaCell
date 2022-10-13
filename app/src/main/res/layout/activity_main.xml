@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +23,92 @@
 
     <include layout="@layout/content_main" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Nombre"
+                android:textSize="@dimen/tamaño_text"
+                android:layout_marginLeft="@dimen/margen_editext"
+                android:layout_marginRight="@dimen/margen_editext" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fecha"
+                android:textSize="@dimen/tamaño_text"
+                android:layout_marginTop="@dimen/margen_editext"
+                android:layout_marginLeft="@dimen/margen_editext"
+                android:layout_marginRight="@dimen/margen_editext"
+                android:layout_weight="1" />
+
+            <DatePicker
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+            </DatePicker>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Telefono"
+                android:textSize="@dimen/tamaño_text"
+                android:layout_marginLeft="@dimen/margen_editext"
+                android:layout_marginRight="@dimen/margen_editext"
+                android:id="@+id/telefono"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Email"
+                android:textSize="@dimen/tamaño_text"
+                android:layout_marginLeft="@dimen/margen_editext"
+                android:layout_marginRight="@dimen/margen_editext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Descripcion"
+                android:textSize="@dimen/tamaño_text"
+                android:layout_marginLeft="@dimen/margen_editext"
+                android:layout_marginRight="@dimen/margen_editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -30,5 +117,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
